@@ -28,7 +28,7 @@ more correct **without breaking anything else**.
 - **Stability** — fixes for games that froze, crashed or wouldn't boot
 - **Graphics** — fixes for missing layers, flickering and broken effects
 - **Sound** — fixes for missing effects, stutter and wrong volume balance
-- **Multi-disc games** — disc swapping works (with BIOS)
+- **Multi-disc games** — launch them via a `.m3u` playlist (one entry in EmulationStation, starts with disc 1); switch discs with **Next Disc** in the menu (use BIOS)
 - **Interlace speed-up (optional)** — high-resolution games can draw their backgrounds at half height: up to **+39 % speed** (Battle Arena Toshinden URA), backgrounds slightly less sharp. Off by default, switch it on per game in the menu.
 - **No per-game hacks** — every fix applies to all games
 
@@ -141,6 +141,10 @@ stay untouched.
 
 - **BIOS:** most games run without it. Some games need it, and **multi-disc
   games** should be played with BIOS.
+- **Multi-disc games:** put the discs in a subfolder and add a `.m3u` file next
+  to it that lists the disc files, one per line, e.g.
+  `Grandia/Grandia (Disc 1).chd`. Hide the single discs in EmulationStation if
+  you like.
 - **Old save states:** save states made with other builds or older versions
   can cause missing sound or freezes. If a game behaves strangely after
   loading a save state, start fresh and make a new one.
